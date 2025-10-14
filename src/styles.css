@@ -20,8 +20,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
     background-color: #86e5fb;
+    position: fixed;
+    width: 100%;
 }
 
 nav .title {
@@ -47,6 +49,7 @@ nav .title {
 nav .nav-options {
     display: flex;
     gap: 50px;
+    padding: 10px;
 
     a {
         text-decoration: none;
@@ -92,10 +95,14 @@ nav .nav-options {
             background-color: var(--accent-color);
             padding: 10px 20px;
             border-radius: 10px;
-            color: white;
-            font-weight: 600;
             border: none;
             cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+            }
         }
     }
 }
@@ -107,11 +114,13 @@ nav .nav-options {
         color: var(--text-primary);
         font-weight: bolder;
         font-size: 2rem;
+        margin: 0;
     }
 
     .pets-catalog-container {
         display: flex;
         justify-content: space-between;
+        padding: 20px;
     }
 
     .pet {
@@ -134,7 +143,6 @@ nav .nav-options {
                 padding: 10px 20px;
                 color: white;
                 border: none;
-                cursor: pointer;
             }
 
         }
