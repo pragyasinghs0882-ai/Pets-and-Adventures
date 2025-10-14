@@ -4,35 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets and Adventures</title>
+    <title>Pet Pals - Adventure Catalog</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
 
 <body>
-    <h1><b>PetPals</b></h1>
-    <h2>Adventure Catalog</h2 </head>
+    <nav>
+        <div class="title">
+            <h1>PetPals</h1>
+            <span>Adventure Catalog</span>
+        </div>
+        <div class="nav-options">
+            <a href="/" class="btn">Home</a>
+            <a href="/collection" class="btn">Collection</a>
+            <a href="/profile" class="btn">Profile</a>
+        </div>
+    </nav>
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Collect,Explore, and Create!</h2>
+                <p>Explore regions to discover cute creatures and adopt them into your collection.</p>
+                <button>Explore</button>
+            </div>
+        </div>
 
-    <h2>Collect,Explore,and Create!</h2>
-    <p>Explore regions to discover cute<br> creatures and adopt them into <br> your collection.</p>
-    <button>Explore</button>
-    <hr>
-    <h3>Available Pets</h3>
-    <table>
-        <tr>
-            <th height="300"></th>
-            <th height="300"></th>
-            <th height="300"></th>
-        </tr>
-        <tr>
-            <td>German Shepherd</td>
-            <td>Labrador Retriever</td>
-            <td>Golden Retriever</td>
-        </tr>
-        <tr>
-            <td>Fire</td>
-            <td>Water</td>
-            <td>Air</td>
-        </tr>
-
-    </table>
+        <div class="pets-catalog">
+            <h2>Available Pets</h2>
+            <div class="pets-catalog-container">
+                <div class="pet" id="fluffin">
+                    <img src="./assets/fluffin.png" alt="Fluffin">
+                    <div class="content" id="fire">
+                        <h3>Fluffin</h3>
+                        <button>🔥 Fire</button>
+                    </div>
+                </div>
+                <div class="pet" id="aqualo">
+                    <img src="./assets/aqualo.png" alt="Aqualo">
+                    <div class="content" id="water">
+                        <h3>Aqualo</h3>
+                        <button>💧 Water</button>
+                    </div>
+                </div>
+                <div class="pet" id="zephyr">
+                    <img src="./assets/zephy.png" alt="Zephyr">
+                    <div class="content" id="air">
+                        <h3>Zephyr</h3>
+                        <button>🍃 Air</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 
 </html>
